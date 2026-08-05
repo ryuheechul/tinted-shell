@@ -8,26 +8,26 @@ export BASE24_THEME="builtin-solarized-light"
 color00="fd/f6/e3" # Base 00 - Black
 color01="dc/32/2f" # Base 08 - Red
 color02="85/99/00" # Base 0B - Green
-color03="83/94/96" # Base 0A - Yellow
+color03="b5/89/00" # Base 0A - Yellow
 color04="26/8b/d2" # Base 0D - Blue
 color05="d3/36/82" # Base 0E - Magenta
 color06="2a/a1/98" # Base 0C - Cyan
-color07="b2/b8/ad" # Base 05 - White
-color08="3b/5a/5d" # Base 03 - Bright Black
+color07="58/6e/75" # Base 05 - White
+color08="83/94/96" # Base 03 - Bright Black
 color09="cb/4b/16" # Base 12 - Bright Red
 color10="58/6e/75" # Base 14 - Bright Green
 color11="65/7b/83" # Base 13 - Bright Yellow
 color12="83/94/96" # Base 16 - Bright Blue
 color13="6c/71/c4" # Base 17 - Bright Magenta
 color14="93/a1/a1" # Base 15 - Bright Cyan
-color15="fd/f6/e3" # Base 07 - Bright White
-color16="b5/89/00" # Base 09
+color15="00/2b/36" # Base 07 - Bright White
+color16="cb/4b/16" # Base 09
 color17="6e/19/17" # Base 0F
-color18="07/36/42" # Base 01
-color19="00/2b/36" # Base 02
-color20="77/89/85" # Base 04
-color21="ee/e8/d5" # Base 06
-color_foreground="b2/b8/ad" # Base 05
+color18="ee/e8/d5" # Base 01
+color19="93/a1/a1" # Base 02
+color20="65/7b/83" # Base 04
+color21="07/36/42" # Base 06
+color_foreground="58/6e/75" # Base 05
 color_background="fd/f6/e3" # Base 00
 
 
@@ -85,12 +85,12 @@ put_template 21 "$color21"
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  put_template_custom Pg b2b8ad # foreground
+  put_template_custom Pg 586e75 # foreground
   put_template_custom Ph fdf6e3 # background
-  put_template_custom Pi b2b8ad # bold color
-  put_template_custom Pj 002b36 # selection color
-  put_template_custom Pk b2b8ad # selected text color
-  put_template_custom Pl b2b8ad # cursor
+  put_template_custom Pi 586e75 # bold color
+  put_template_custom Pj 93a1a1 # selection color
+  put_template_custom Pk 586e75 # selected text color
+  put_template_custom Pl 586e75 # cursor
   put_template_custom Pm fdf6e3 # cursor text
 else
   put_template_var 10 "$color_foreground"
@@ -135,16 +135,16 @@ unset color_background
 # Optionally export variables
 if [ -n "$TINTED_SHELL_ENABLE_BASE24_VARS" ]; then
   export BASE24_COLOR_00_HEX="fdf6e3"
-  export BASE24_COLOR_01_HEX="073642"
-  export BASE24_COLOR_02_HEX="002b36"
-  export BASE24_COLOR_03_HEX="3b5a5d"
-  export BASE24_COLOR_04_HEX="778985"
-  export BASE24_COLOR_05_HEX="b2b8ad"
-  export BASE24_COLOR_06_HEX="eee8d5"
-  export BASE24_COLOR_07_HEX="fdf6e3"
+  export BASE24_COLOR_01_HEX="eee8d5"
+  export BASE24_COLOR_02_HEX="93a1a1"
+  export BASE24_COLOR_03_HEX="839496"
+  export BASE24_COLOR_04_HEX="657b83"
+  export BASE24_COLOR_05_HEX="586e75"
+  export BASE24_COLOR_06_HEX="073642"
+  export BASE24_COLOR_07_HEX="002b36"
   export BASE24_COLOR_08_HEX="dc322f"
-  export BASE24_COLOR_09_HEX="b58900"
-  export BASE24_COLOR_0A_HEX="839496"
+  export BASE24_COLOR_09_HEX="cb4b16"
+  export BASE24_COLOR_0A_HEX="b58900"
   export BASE24_COLOR_0B_HEX="859900"
   export BASE24_COLOR_0C_HEX="2aa198"
   export BASE24_COLOR_0D_HEX="268bd2"
